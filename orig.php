@@ -34,7 +34,7 @@ function check_csrf() {
 // Connect to MySQL
 // ---------------------------
 try {
-    $pdo = new PDO("mysql:host=localhost;dbname=planner;charset=utf8", "root", "SokoloNash@1");
+    $pdo = new PDO("mysql:host=localhost;dbname=planner;charset=utf8", "root", "");
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (Throwable $e) {
     header('Content-Type: application/json');
